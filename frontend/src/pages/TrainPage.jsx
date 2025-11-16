@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Brain, Play, CheckCircle, AlertCircle, Loader } from 'lucide-react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 
-const API_URL = 'https://e-tongue-2.onrender.com'
+const API_URL = ''
 
 export default function TrainPage() {
   const [selectedModel, setSelectedModel] = useState('random_forest')

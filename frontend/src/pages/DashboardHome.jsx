@@ -4,7 +4,7 @@ import axios from 'axios'
 import { Search, Database, Brain, Radio, TestTube, TrendingUp, Activity, RefreshCw, Loader } from 'lucide-react'
 import Toast from '../components/ui/Toast'
 
-const API_URL = 'https://e-tongue-2.onrender.com'
+const API_URL = ''
 
 export default function DashboardHome() {
   const [systemStatus, setSystemStatus] = useState(null)
