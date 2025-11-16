@@ -2,6 +2,9 @@
 
 A complete production-ready Machine Learning system for identifying Ayurvedic Dravya (herbs) using simulated Electronic Tongue sensor data.
 
+## [Watch Demo Video](https://drive.google.com/file/d/1uWy9tYZserlNoXZ8_M7MkuvBeoHTcjoS/view?usp=sharing)
+See the demo of the project by clicking the link above.
+
 ## Quick Start
 
 ```bash
