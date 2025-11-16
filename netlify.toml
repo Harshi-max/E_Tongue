@@ -1,0 +1,44 @@
+[build]
+  command = "cd frontend && npm install && npm run build"
+  publish = "frontend/dist"
+
+[dev]
+  command = "cd frontend && npm run dev"
+  port = 3000
+
+# Proxy all backend API calls to Render
+[[redirects]]
+  from = "/api/*"
+  to = "https://e-tongue-2.onrender.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/predict"
+  to = "https://e-tongue-2.onrender.com/predict"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/health"
+  to = "https://e-tongue-2.onrender.com/health"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/docs"
+  to = "https://e-tongue-2.onrender.com/docs"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/openapi.json"
+  to = "https://e-tongue-2.onrender.com/openapi.json"
+  status = 200
+  force = true
+
+# SPA fallback - redirect all non-file requests to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
