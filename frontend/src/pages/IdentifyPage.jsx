@@ -6,7 +6,7 @@ import PHvsConductivityScatter from '../components/charts/PHvsConductivityScatte
 import Toast from '../components/ui/Toast'
 import { CheckCircle, AlertCircle, Loader } from 'lucide-react'
 
-const API_URL = ''
+const API_URL = import.meta.env.VITE_API_URL || 'https://e-tongue-2.onrender.com'
 
 export default function IdentifyPage() {
   const [ph, setPh] = useState(7.0)
