@@ -22,3 +22,5 @@ seaborn==0.12.2
 # For TensorFlow installation:
 # CPU: pip install tensorflow
 # GPU: pip install tensorflow-gpu
+bcrypt==4.1.2
+PyJWT==2.8.0
