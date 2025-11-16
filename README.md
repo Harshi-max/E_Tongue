@@ -30,6 +30,12 @@ python app.py
 
 This project implements an **E-Tongue (Electronic Tongue)** system for automated identification of Ayurvedic herbs **without requiring physical hardware**. The system uses machine learning to classify dravya based on simulated sensor readings including pH, conductivity, temperature, and voltammetry signals.
 
+## Description
+AI-Powered Ayurvedic Herb Identification Using Simulated Electronic Tongue Sensors
+
+A fully production-grade Machine Learning system that simulates Electronic Tongue (E-Tongue) behavior to classify Ayurvedic herbal substances (Dravya) using synthetic chemical-sensor data. The project requires no physical hardware, yet mimics real-world E-Tongue sensors through statistical modeling and ML.
+
+This system provides end-to-end pipeline: dataset generation → preprocessing → ML model training → REST API → a clean interactive Web Dashboard.
 ### Key Features
 
 ✅ **Synthetic Dataset Generation** - No hardware required  
