@@ -12,10 +12,13 @@ export default function PrivateRoute({ children }) {
     const token = localStorage.getItem('token')
     
     if (!token) {
+      console.log('No token found')
       setLoading(false)
       setIsValid(false)
       return
     }
+
+    console.log('Token found, verifying...', token.substring(0, 20) + '...')
 
     // Verify token with backend
     axios.get(`${API_URL}/api/me`, {
@@ -23,10 +26,12 @@ export default function PrivateRoute({ children }) {
         'Authorization': `Bearer ${token}`
       }
     })
-    .then(() => {
+    .then((response) => {
+      console.log('Token verified successfully:', response.data)
       setIsValid(true)
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error('Token verification failed:', error.response?.status, error.response?.data)
       // Token invalid, remove it
       localStorage.removeItem('token')
       setIsValid(false)
