@@ -1,25 +1,15 @@
-# E-Tongue Dravya Identification - Deployment-Safe Requirements
-
-# Backend
-fastapi==0.104.1
+#fastapi==0.104.1
 uvicorn==0.24.0
 pydantic==2.5.0
 python-multipart==0.0.6
 
-# Data Processing & ML
-numpy<2.0
-pandas>=2.0.0
-scikit-learn>=1.3.0
+# Deployment-safe versions
+numpy==1.26.4
+pandas==1.5.3
+scikit-learn==1.3.0
 
-# Visualization
 matplotlib==3.7.2
 seaborn==0.12.2
 
-# Optional: Deep Learning (commented to avoid deployment failures)
+# Optional, should be disabled for deployment
 # tensorflow==2.13.0
-
-# Note:
-# TensorFlow often fails on cloud hosting platforms.
-# Install manually if needed for local development:
-# CPU: pip install tensorflow
-# GPU: pip install tensorflow-gpu
