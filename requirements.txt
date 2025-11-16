@@ -1,0 +1,26 @@
+# E-Tongue Dravya Identification - Complete Requirements
+# Install all dependencies with: pip install -r requirements.txt
+
+# Backend API
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Data Processing & ML
+numpy<2.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Optional: Deep Learning (for CNN model)
+# Uncomment the following line if you want to use the CNN model
+# tensorflow==2.13.0
+
+# Note: For TensorFlow, you may need to install separately depending on your system:
+# CPU: pip install tensorflow
+# GPU: pip install tensorflow-gpu
+
