@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { Send, Copy, CheckCircle, AlertCircle, Trash2 } from 'lucide-react'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://e-tongue-2.onrender.com'
 
 const sampleRequest = {
   ph: 7.0,

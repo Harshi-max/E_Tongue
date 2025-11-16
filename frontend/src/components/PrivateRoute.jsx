@@ -2,7 +2,7 @@ import { Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://e-tongue-2.onrender.com'
 
 export default function PrivateRoute({ children }) {
   const [isValid, setIsValid] = useState(null)
