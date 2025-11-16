@@ -4,7 +4,13 @@ import axios from 'axios'
 import { LogIn, Mail, Lock, AlertCircle, User, UserPlus } from 'lucide-react'
 import Toast from '../components/ui/Toast'
 
-const API_URL = 'http://localhost:8000'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import Toast from '../components/ui/Toast'
+import { LogIn } from 'lucide-react'
+
+const API_URL = 'https://e-tongue-2.onrender.com'
 
 export default function LoginPage() {
   const [isSignup, setIsSignup] = useState(false)
